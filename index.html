@@ -52,7 +52,18 @@ limitations under the License.
     "config" : {
       "G-97WL7NM5GW": { "groups": "default" }
     }
-  }
+  },
+	"triggers": {
+        "button": {
+          "selector": "#home",
+          "on": "click",
+          "vars": {
+            "event_name": "Home",
+            "method": "Google"
+          }
+        }
+      }
+    }
 }
 </script>
 </amp-analytics>
@@ -87,7 +98,7 @@ limitations under the License.
   </div>
   <nav class="ampstart-sidebar-nav ampstart-nav">
     <ul class="list-reset m0 p0 ampstart-label">
-          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Home</a></li>
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#" id="home">Home</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="menu.amp.html">Menu</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#locations">Locations & Hours</a></li>
     </ul>
